@@ -1,6 +1,13 @@
 package lib
 
-type UserFetcher struct {
-
+func NewUserFetcher(ids []int) *UserFetcher {
+	return &UserFetcher{ids: ids}
 }
 
+type UserFetcher struct {
+	ids []int
+}
+
+func (u *UserFetcher) Fetch() {
+
+}
